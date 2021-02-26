@@ -96,7 +96,7 @@ input, select {
 }
 
 .header {
-  height: 70px;
+  height: 30px;
   background: #000;
 }
 
@@ -107,11 +107,11 @@ input, select {
 }
 
 .header-logo {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   margin-left: 35px;
   color: #f2f2f2;
-  line-height: 70px;
+  line-height: 50px;
 }
 
 .header-nav ul{
@@ -128,23 +128,31 @@ input, select {
 }
 
 #eyecatch {
-  height: 1600px;
+  height: 400px;
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
-  background-position: center;position: relative;
+  background-position: center;
+  position: relative;
 }
 
 #eyecatch p {
   position: absolute;
   top: 50%;
-  left: 23%;
+  left: 15%;
   transform: translate(-50%, -50%);
-  font-size: 70px;
+  font-size: 20px;
   font-style:italic;
   font-weight: bold;
   color: #ccc;
   line-height:1;
 }
+
+.news {
+  position: absolute; 
+  top: 40%; left:70%;right: 0; bottom: 43%;
+  background: white;
+}
+
 dl {
   text-align: end;
 }
@@ -170,37 +178,42 @@ a{
 }
 
 #about　{
-  height: 600px;
-  /* margin: 0 auto 50px; */
+  width: 80%;
+  margin: 100 auto 50px;
   background-color: black;
 }
 
 #about .section-title {
-  height: 600px;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
-  margin: 30px 0;
-  text-align: center;
+  margin: 0px;
+  padding:100px 15px;
+  text-align:center;
   background-color: black;
   color: white
 }
 
-.about-wrap{
+.about-wrap {
   display: flex;
   align-items: center;
+  background-color: black;
 }
 
-.photo1 {
-  position: absolute;
-  padding: 20px;
-  right: 50px;
-  top:1500px;
+.about-left img {
+  position: absolute; 
+  top: 100%; left:40%;right: 0; bottom: 43%;
+  width: 50%;
 }
 
+.about-right h2 {
+  font-weight: bold;
+}
 
 .about-right h2,
 .about-center p {
-  margin-bottom: 1px;
+  margin-bottom: 400px;
+  margin-top: -140px;
+  padding: 100px;
   background: black;
   color: white
 }
