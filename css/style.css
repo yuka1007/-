@@ -159,8 +159,9 @@ input, select {
 
 .news-wrapper {
   position: absolute; 
-  top: 75%; left:50%;right: 0; bottom: 18%;
+  right: 0; bottom: 0;
   background: white;
+  padding: 1% 7% 1% 1%;
   font-size: 12px;
 }
 .news-wrapper a {
@@ -170,41 +171,41 @@ input, select {
   color: white;
   text-decoration: none;
   display:inline-block;
-  padding: 13px 24px;
-  bottom:0;
-  right: 0;
+  padding: 4.5% 5%;
+  right: 0; bottom: 0;
 }
 .about　{
+  height: 20%;
   width: 3px;
   display: inline-block;
-  margin: -100px -100px 50px 0;
-  position: absolute;
   position: relative;
 }
 .about-center {
   font-size: 13px;
-  padding: 100px 100px 100px 100px;
+  padding: 10% 5% 20% 5%;
   color: white;
   background-color: black;
 }
 .about-right img {
   position: absolute;
-  left: 40%;
-  top: 90%;
+  left: 45%;
+  top: 100%;
   width: 50%;
-
+  z-index: 10;
 }
 .about-center h2,
-.about-center p {
+.about-center p,
+.about-center a {
  position: absolute;
- position: relative;
 }
 .about-center h2 {
-  font-size: 16px;
+  font-size: 18px;
+  z-index: 20;
+  margin: 0 0 10% 5%;
 }
 .about-center p {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 2% 30% 10% 5%;
+  z-index: 20;
 }
 
 .about-center a {
@@ -215,6 +216,8 @@ input, select {
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
+  margin: 10% 45% 10% 5%;
+  z-index: 20;
 }
 .section-title {
   text-align: center;
@@ -291,19 +294,16 @@ padding: 3% 0;
 }
 .company {
   height: 140px;
-  width: 48%;
+  width: 49%;
   background-image: url(../img/company.jpeg);
   background-size: 50%;
   background-position: right;
-  margin: 55% 0;
 }
 .container2 h2 {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   padding:10% 0 0 0;
-  position: absolute;
-  position: relative;
   color: white;
 }
 .container2 h1 {
@@ -312,17 +312,19 @@ padding: 3% 0;
   text-align: center;
   padding: 1% 10%;
   color: white;
-  position: absolute;
-  position: relative;
 }
 .recruit {
   height: 140px;
-  width: 50%;
+  width: 49%;
   background-image: url(../img/recruit.jpg);
   background-size: 50%;
   background-position: right;
-  margin: -69% 0 50% 50%;
   text-align: end;
+}
+.company,
+.recruit {
+display: inline-block;
+margin: 60% 0 0 0;
 }
 .container3 h2 {
   font-weight: bold;
@@ -330,21 +332,18 @@ padding: 3% 0;
   text-align: center;
   padding:10% 0 0 0;
   color: white;
-  position: absolute;
-  position: relative;
 }
 .container3 h1 {
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  padding: 1% -20% 5% 20%;
+  padding: 1% -20% 1% 20%;
   color: white;
-  position: absolute;
-  position: relative;
 }
+
 .faq {
   background-color: black;
-  margin: -40% 10% 10% 10%;
+  margin: 10% 10% -80% 10%;
   padding: 3% 10%;
 }
 
@@ -368,16 +367,15 @@ padding: 3% 0;
   background-image: url(../img/contact-bg.jpg);
   background-size: cover;
   background-position:center;
-  padding: -50% 0 0 0;
+  margin: 90% 0 0 0;
+  padding: 10% 0 0 0;
 }
 .contact h2 {
   font-weight: bold;
   font-size: 22px;
-  padding: 10% 0 0 0;
 }
 .contact h1 {
   font-size: 13px;
-  /* padding: -40% 0 5% 0; */
 }
 .contact p {
   font-size: 20px;
