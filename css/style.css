@@ -135,6 +135,7 @@ input, select {
   background-image: url(../img/eyecatch.jpg);
   background-size: cover;
   background-position: center;
+  position: relative
 }
 
 .container {
@@ -164,31 +165,32 @@ input, select {
 }
 .news-wrapper a {
   position: absolute; 
-  top: 1%; left:80%;right: 0%; bottom: 0%;
   text-align: center;
   background-color:black;
   color: white;
   text-decoration: none;
   display:inline-block;
   padding: 13px 24px;
+  bottom:0;
+  right: 0;
 }
 .about　{
   width: 3px;
   display: inline-block;
   margin: -100px -100px 50px 0;
+  position: absolute;
+  position: relative;
 }
 .about-center {
   font-size: 13px;
   padding: 100px 100px 100px 100px;
-  margin-top: -320px;
   color: white;
   background-color: black;
 }
 .about-right img {
   position: absolute;
-  position: relative;
-  left:450px;
-  top: 50px;
+  left: 40%;
+  top: 90%;
   width: 50%;
 
 }
@@ -342,9 +344,10 @@ padding: 3% 0;
 }
 .faq {
   background-color: black;
-  margin: -40% 10% 30% 10%;
+  margin: -40% 10% 10% 10%;
   padding: 3% 10%;
 }
+
 .container4 h2 {
   font-weight: bold;
   font-size: 22px;
@@ -365,7 +368,6 @@ padding: 3% 0;
   background-image: url(../img/contact-bg.jpg);
   background-size: cover;
   background-position:center;
-  margin: -20% 0;
   padding: -50% 0 0 0;
 }
 .contact h2 {
@@ -383,6 +385,7 @@ padding: 3% 0;
 }
 .contact small {
   font-size: 5px;
+  display: block;
 }
 .contact a {
   font-size: 8px;
@@ -391,18 +394,20 @@ padding: 3% 0;
   border: 1px solid #333333;
   font-weight: bold;
   color: white;
-  margin: 40% 45% 20% 45%;
+  /* margin: 40% 45% 20% 45%; */
   padding: 1% 1%;
 }
 #footer {
   height: 30px;
   background: #000;
-  margin: 17% 5% 0% 5%;
+  width: 100%;
+  text-align: center;
+  /* margin: 17% auto; */
 }
-#footer small {
+.footer-wrap small {
   font-size: 6px;
   color:white;
-  margin: 1% 30% 1% 30%;
+  margin: 1% 0% 0 30%;
   
 }
 .footer-wrap {
@@ -411,11 +416,10 @@ padding: 3% 0;
   align-items: center;
   margin-top: -3%;
 }
-.footer-logo {
+.footer-wrap h1 {
   font-size: 10px;
   font-weight: bold;
   color: #f2f2f2;
-  line-height: 60px;
   
 }
 .footer-nav ul{
@@ -429,4 +433,5 @@ padding: 3% 0;
 
 .footer-nav a {
   color: #f2f2f2;
+  text-align: center;
 }
